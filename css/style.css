@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 .header {
   position: absolute;
   top: 0;
@@ -37,7 +38,6 @@
 }
 
 .header__button {
-  margin-left: 55.3rem;
   font-size: 1.6rem;
   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
 }
@@ -151,7 +151,7 @@ button, input {
 }
 
 .main-display {
-  padding-top: 27rem;
+  padding-top: 20rem;
 }
 
 .main-display .container {
@@ -160,9 +160,10 @@ button, input {
 }
 
 .main-display__header {
-  min-width: 76rem;
+  max-width: 76rem;
   margin-bottom: 5rem;
   font-size: 6.4rem;
+  font-weight: 700;
 }
 
 .main-display__timer {
@@ -203,22 +204,63 @@ button, input {
           flex-direction: column;
 }
 
-.timer__item :not(:last-child) {
+.timer__item:not(:last-child) {
   margin-right: 3rem;
 }
 
 .timer__count {
   font-size: 3.6rem;
+  font-weight: 700;
 }
 
 .timer__text {
   font-size: 1.6rem;
+  font-weight: 400;
   opacity: 0.4;
+}
+
+.work {
+  padding-top: 28rem;
+  padding-bottom: 24.3rem;
+}
+
+.work__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work__img {
+  width: 52.6rem;
+  height: 49.9rem;
+  margin-right: 13.9rem;
+}
+
+.work__text {
+  max-width: 63.6rem;
+  padding-top: 6.9rem;
+}
+
+.work__header {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+  margin-bottom: 4.5rem;
+}
+
+.work__description {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
 }
 
 body {
   background: black;
   background: linear-gradient(156deg, black 0%, #060606 100%);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
 
 .container {
@@ -227,7 +269,8 @@ body {
 }
 
 .button {
-  background-repeat: 5rem;
+  border-radius: 5rem;
   padding: 1rem 3rem;
   color: white;
+  font-weight: 400;
 }

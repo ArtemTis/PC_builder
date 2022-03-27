@@ -1,10 +1,15 @@
 @import "_header";
 @import "_resetStyles";
 @import "_main-display";
+@import "_about-work";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body{
     background: rgb(0,0,0);
     background: linear-gradient(156deg, rgba(0,0,0,1) 0%, rgba(6,6,6,1) 100%);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
 }
 
 .container{
@@ -13,9 +18,9 @@ body{
 }
 
 .button {
-    background-repeat: 5rem;
+    border-radius: 5rem;
     padding: 1rem 3rem;
     color: white;
-
+    font-weight: 400;
 }
 

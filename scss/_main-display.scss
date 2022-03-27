@@ -1,39 +1,41 @@
 
 .main-display {
-    padding-top: 27rem;
+    padding-top: 20rem;
 
-        .container{
+      .container{
             position: relative;
             z-index: 5;
-        }
+            // padding-bottom: 22.8rem;
+      }
 
-		&__header {
-            min-width: 76rem;
+      &__header {
+            max-width: 76rem;
             margin-bottom: 5rem;
             font-size: 6.4rem;
-		}
+            font-weight: 700;
+      }
 
-		&__timer {
+      &__timer {
             display: flex;
             margin-bottom: 7.6rem;
-		}
+      }
 
-		&__background {
+      &__background {
             position: absolute;
             top: 0;
             left: 0;
             z-index: 1;
-		}
+      }
 
-        &__button{
+      &__button{
             background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
             font-size: 1.6rem;
-        }
+      }
 }
 
 .timer {
 
-		&__item {
+      &__item {
             width: 10.2rem;
             height: 11.2rem;
             background-color: #121212;
@@ -42,18 +44,20 @@
             align-items: center;
             flex-direction: column;
 
-            :not(:last-child){
-                margin-right: 3rem;
+            &:not(:last-child){
+                  margin-right: 3rem;
             }
-		}
+      }
 
-		&__count {
+      &__count {
             font-size: 3.6rem;
-		}
+            font-weight: 700;
+      }
 
-		&__text {
+      &__text {
             font-size: 1.6rem;
+            font-weight: 400;
             opacity: 0.4;
-		}
+      }
 }
 
