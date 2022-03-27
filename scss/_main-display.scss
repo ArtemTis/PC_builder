@@ -1,0 +1,59 @@
+
+.main-display {
+    padding-top: 27rem;
+
+        .container{
+            position: relative;
+            z-index: 5;
+        }
+
+		&__header {
+            min-width: 76rem;
+            margin-bottom: 5rem;
+            font-size: 6.4rem;
+		}
+
+		&__timer {
+            display: flex;
+            margin-bottom: 7.6rem;
+		}
+
+		&__background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+		}
+
+        &__button{
+            background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+            font-size: 1.6rem;
+        }
+}
+
+.timer {
+
+		&__item {
+            width: 10.2rem;
+            height: 11.2rem;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            :not(:last-child){
+                margin-right: 3rem;
+            }
+		}
+
+		&__count {
+            font-size: 3.6rem;
+		}
+
+		&__text {
+            font-size: 1.6rem;
+            opacity: 0.4;
+		}
+}
+

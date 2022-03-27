@@ -1,0 +1,41 @@
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    padding: 4rem 11rem 4rem 8rem;
+    z-index: 10;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: block;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        margin-left: 55.3rem;
+        font-size: 1.6rem;
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    }
+
+    &__nav {
+        font-size: 1.6rem;
+        a:not(:last-child){
+            margin-right: 7.1rem;
+        }
+    }
+}
+

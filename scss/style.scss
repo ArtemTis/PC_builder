@@ -1,0 +1,21 @@
+@import "_header";
+@import "_resetStyles";
+@import "_main-display";
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(156deg, rgba(0,0,0,1) 0%, rgba(6,6,6,1) 100%);
+}
+
+.container{
+    width: 130rem;
+    margin: 0 auto;
+}
+
+.button {
+    background-repeat: 5rem;
+    padding: 1rem 3rem;
+    color: white;
+
+}
+
