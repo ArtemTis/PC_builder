@@ -256,7 +256,7 @@ button, input {
   line-height: 160%;
 }
 
-.command__item, .assembly__wrap, .assembly__item {
+.command__item, .assembly__wrap, .assembly__item, form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,7 +396,7 @@ button, input {
   border: .1rem solid #FFFFFF;
 }
 
-.command__item, .assembly__wrap, .assembly__item {
+.command__item, .assembly__wrap, .assembly__item, form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,11 +460,31 @@ button, input {
   margin-right: 3rem;
 }
 
+.command__item, .assembly__wrap, .assembly__item, form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 body {
   background: black;
   background: linear-gradient(156deg, black 0%, #060606 100%);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 .container {
@@ -477,4 +497,73 @@ body {
   padding: 1rem 3rem;
   color: white;
   font-weight: 400;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 3rem 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.modal__inner {
+  position: relative;
+  width: 66.3rem;
+  padding: 9rem 1rem;
+  background: #2C2C2C;
+  text-align: center;
+}
+
+.modal__header {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+  margin-bottom: 1ren;
+}
+
+.modal__subheader {
+  font-size: 1.6rem;
+  line-height: 160%;
+  opacity: 0.5;
+  margin-bottom: 2.8rem;
+}
+
+.modal__elements {
+  margin: 0 auto 3.2rem auto;
+  width: 45.4rem;
+}
+
+.modal__item {
+  height: 4.4rem;
+}
+
+.modal__item:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+
+.modal__input {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  border-radius: 5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: white;
+  opacity: 0.8;
+}
+
+.modal__close {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
 }

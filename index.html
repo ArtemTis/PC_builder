@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сборка компьютера</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                     <a href="#">Команда</a>
                 </nav>
             </div>
-            <button type="button" class="button header__button">Оставить заявку</button>
+            <button type="button" class="button header__button modal__button">Оставить заявку</button>
         </div>
     </header>
     <main class="main">
@@ -48,7 +49,7 @@
                         <div class="timer__text">Секунд</div>
                     </div>
                 </div>
-                <button type="button" class="button main-display__button">Оставить заявку</button>
+                <button type="button" class="button main-display__button modal__button">Оставить заявку</button>
             </div>
             <div class="main-display__background">
                 <img src="img/bg.png" alt="Main gackground PC">
@@ -162,7 +163,7 @@
                 <div class="assembly__wrap">
                     <h2 class="assembly__header">Закажите свою уникальную сборку</h2>
                     <div class="assembly__description">Мы свяжемся с вами, чтобы уточнить детали заказа</div>
-                    <button class="button assembly__button">Оставить заявку</button>
+                    <button class="button assembly__button modal__button">Оставить заявку</button>
                     <div class="assembly__socials">
                         <div class="assembly__item">
                             <img src="img/vk.svg" alt="Vk">
@@ -180,6 +181,28 @@
                 </div>
             </div>
         </section>
+
+        <form action="#" class="modal">
+            <div class="modal__inner">
+                <div class="modal__close">
+                    <img src="img/close-cross.svg" alt="Close cross">
+                </div>
+                <h3 class="modal__header">Заявка на сборку ПК</h3>
+                <div class="modal__subheader">Мы свяжемся с вами, чтобы обсудить детали заказа</div>
+                <div class="modal__elements">
+                    <div class="modal__item">
+                        <input type="text" class="modal__input" placeholder="Как вас зовут">
+                    </div>
+                    <div class="modal__item">
+                        <input type="tel" class="modal__input" placeholder="Номер телефона">
+                    </div>
+                    <div class="modal__item">
+                        <input type="email" class="modal__input" placeholder="E-mail">
+                    </div>
+                </div>
+                <button type="submit" class="button main-display__button">Отправить</button>
+            </div>
+        </form>
     </main>
 </body>
 

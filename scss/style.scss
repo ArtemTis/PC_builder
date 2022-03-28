@@ -4,6 +4,7 @@
 @import "_about-work";
 @import "_process";
 @import "_assembly";
+@import "_variables";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
@@ -13,6 +14,10 @@ body{
     background: linear-gradient(156deg, rgba(0,0,0,1) 0%, rgba(6,6,6,1) 100%);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+
+    &.lock{
+        overflow: hidden;
+    }
 }
 
 .container{
@@ -26,4 +31,77 @@ body{
     color: white;
     font-weight: 400;
 } 
+
+form{
+    @extend %center-block;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    padding: 3rem 0;
+    background: rgba(0,0, 0, 0.8);
+    display: none;
+
+    &__inner {
+        position: relative;
+        width: 66.3rem;
+        padding: 9rem 1rem;
+        background: #2C2C2C;
+        text-align: center;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 140%;
+        margin-bottom: 1ren;
+    }
+
+    &__subheader {
+        font-size: $fs-medium;
+        line-height: 160%;
+        opacity: 0.5;
+        margin-bottom: 2.8rem;
+    }
+
+    &__elements {
+        margin: 0 auto 3.2rem auto;
+        width: 45.4rem;
+    }
+
+    &__item {
+        height: 4.4rem;
+
+        &:not(:last-child){
+            margin-bottom: 1.8rem;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        border-radius: 5rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 160%;
+        color: white;
+        opacity: 0.8;
+    }
+
+    &__close{
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+}
 
