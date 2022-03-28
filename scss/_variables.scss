@@ -1,0 +1,9 @@
+
+$fs-medium: 1.6rem;
+
+%center-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
