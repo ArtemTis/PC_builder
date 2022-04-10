@@ -557,6 +557,23 @@ body.lock {
   line-height: 160%;
   color: white;
   opacity: 0.8;
+  padding-left: 15px;
+}
+
+.modal input::-webkit-input-placeholder {
+  color: white;
+}
+
+.modal input:-ms-input-placeholder {
+  color: white;
+}
+
+.modal input::-ms-input-placeholder {
+  color: white;
+}
+
+.modal input::placeholder {
+  color: white;
 }
 
 .modal__close {
